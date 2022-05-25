@@ -13,5 +13,5 @@ Assumptions:
     - `data` must be a `PropertyMap` to satisfy the `ObjectSchema`. We
       currently require that the keys of each Property are unique, but can
       relax this assumption if need be. 
-    - `data` must be a list of the above types (and this one!) to satisfy the `ArraySchema`.
+    - `data` must be a list of one of the above types (or this one, for nested Arrays) to satisfy the `ArraySchema`.
 
