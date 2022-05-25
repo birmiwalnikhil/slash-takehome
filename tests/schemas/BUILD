@@ -44,5 +44,14 @@ java_test(
     "//third_party:truth"
   ]
 )
-
-
+java_test(
+  name = "ArraySchemaTest",
+  srcs = ["ArraySchemaTest.java"],
+  test_class = "slash.schemas.ArraySchemaTest",
+  deps = [
+    "//data",
+    "//schemas",
+    "//third_party:junit4",
+    "//third_party:truth"
+  ]
+)

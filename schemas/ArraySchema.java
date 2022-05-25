@@ -15,6 +15,7 @@ public class ArraySchema extends Schema {
     if (!(data instanceof Object[])) return false;
   
     Object[] dataArray = (Object[]) data;
+    // TODO: Parallelize each schema.match(o) call.
     for (Object o : dataArray) {
       if (!schema.matches(o)) {
         return false;
