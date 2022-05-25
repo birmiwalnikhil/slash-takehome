@@ -22,6 +22,16 @@ public class PropertyMap {
     this.properties.add(new Property(name, o));
   }
 
+  /** Return the names of each property. */
+  public Set<String> getAllPropertyNames() {
+    Set<String> names = new HashSet<>();
+    for (Property property : this.properties) {
+      names.add(property.key);
+    }
+
+    return names;
+  }
+
   // VisibleForTesting
   protected boolean hasProperty(String name, Object o) {
     return properties.contains(new Property(name, o));
