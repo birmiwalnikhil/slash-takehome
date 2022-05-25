@@ -3,8 +3,10 @@
 The take-home project as provided from Slash. Implements
 and tests a stripped-down OpenAPI Schema parser. Written in Java.
 
+Execute the suite of tests via `bazel run //test_runner:Main`
+
 Assumptions:
-  - The primary function is `validateSchema (Schema schema, Object data) -> boolean`.
+  - The primary function is `runTest (Schema schema, Object data) -> boolean`.
   - We make the following assumptions about data: `Object`. 
     - `data` must be a String to satisfy the `StringSchema`.
     - `data` must be an Integer to satisfy the `NumberSchema` (i.e. we don't
