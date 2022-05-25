@@ -10,3 +10,14 @@ java_test(
     "//third_party:truth"
   ]
 )
+
+java_test(
+  name = "NumberSchemaTest",
+  srcs = ["NumberSchemaTest.java"],
+  test_class = "slash.schemas.NumberSchemaTest",
+  deps = [
+    "//schemas",
+    "//third_party:junit4",
+    "//third_party:truth"
+  ]
+)
