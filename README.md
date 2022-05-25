@@ -10,7 +10,6 @@ Assumptions:
     - `data` must be an Integer to satisfy the `NumberSchema` (i.e. we don't
       support floats/doubles/longs/etc).
     - `data` must be a Boolean to satisfy the `BooleanSchema`.
-    - `data` must be a Key/Value pair to satisfy the `ObjectSchema`.
-    - `data` must be an array of Key/Value pairs (see above) to satisfy the
-      `ArraySchema`.
+    - `data` must be a `PropertyMap` to satisfy the `ObjectSchema`.
+    - `data` must be a list of the above types (and this one!) to satisfy the `ArraySchema`.
 
