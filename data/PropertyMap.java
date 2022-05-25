@@ -6,7 +6,7 @@ import java.util.HashSet;
 /** An unordered collection of {@link Property}s. */
 public class PropertyMap {
   
-  /** A mapping from name -> Object. */
+  /** A collection of named key/value pairs. */
   public final Set<Property> properties;
 
   public PropertyMap() {

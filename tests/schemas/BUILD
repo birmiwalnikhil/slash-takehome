@@ -32,3 +32,17 @@ java_test(
     "//third_party:truth"
   ]
 )
+
+java_test(
+  name = "ObjectSchemaTest",
+  srcs = ["ObjectSchemaTest.java"],
+  test_class = "slash.schemas.ObjectSchemaTest",
+  deps = [
+    "//data",
+    "//schemas",
+    "//third_party:junit4",
+    "//third_party:truth"
+  ]
+)
+
+
