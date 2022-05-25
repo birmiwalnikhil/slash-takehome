@@ -21,3 +21,14 @@ java_test(
     "//third_party:truth"
   ]
 )
+
+java_test(
+  name = "BooleanSchemaTest",
+  srcs = ["BooleanSchemaTest.java"],
+  test_class = "slash.schemas.BooleanSchemaTest",
+  deps = [
+    "//schemas",
+    "//third_party:junit4",
+    "//third_party:truth"
+  ]
+)
