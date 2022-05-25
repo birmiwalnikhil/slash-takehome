@@ -1,8 +1,7 @@
 load("@rules_java//java:defs.bzl", "java_library")
 
 java_library(
-  name = "schemas",
+  name = "data",
   visibility = ["//visibility:public"],
   srcs = glob(["*.java"]),
-  deps = ["//data"]
 )
